@@ -1,0 +1,34 @@
+{
+  "StartingGold": 19,
+  "StartingCard": "copper",
+  "DeckCapacity": 7,
+  "TowerSlots": 2,
+  "BaseIntegrity": 12,
+  "BaseDamage": 7,
+  "BaseShotsPerSecond": 1.25,
+  "ManualDamageMultiplier": 1.45,
+  "ManualRateMultiplier": 1.25,
+  "MineUpgradeCost": 14,
+  "MineUpgradeStep": 0.44,
+  "MineMaxLevel": 4,
+  "BossWarningSeconds": 12,
+  "Cards": [
+    { "Id": "copper", "Name": "铜芯弹", "Description": "伤害 +3", "Damage": 3 },
+    { "Id": "impact", "Name": "重击弹", "Description": "伤害 +7", "Damage": 7 },
+    { "Id": "burst", "Name": "震荡弹", "Description": "伤害 +2 · 命中时造成范围溅射", "Damage": 2, "SplashRadius": 74 },
+    { "Id": "spring", "Name": "速射簧", "Description": "射速 +0.60 发/秒", "Rate": 0.60 },
+    { "Id": "frost", "Name": "寒晶弹", "Description": "命中时降低敌人移速", "SlowFactor": 0.62, "SlowSeconds": 1.6 }
+  ],
+  "Stones": [
+    { "Name": "赤铜石", "Cost": 8, "MineSeconds": 4.8, "CardIds": ["impact", "burst"] },
+    { "Name": "蓝晶石", "Cost": 9, "MineSeconds": 5.6, "CardIds": ["spring", "frost"] }
+  ],
+  "Waves": [
+    { "Time": 6, "Count": 4, "Interval": 1.05, "Health": 18, "Speed": 52, "Gold": 5, "Impact": 1 },
+    { "Time": 22, "Count": 6, "Interval": 0.82, "Health": 26, "Speed": 57, "Gold": 5, "Impact": 1 },
+    { "Time": 42, "Count": 9, "Interval": 0.68, "Health": 32, "Speed": 64, "Gold": 6, "Impact": 1 },
+    { "Time": 63, "Count": 11, "Interval": 0.61, "Health": 42, "Speed": 70, "Gold": 7, "Impact": 1 },
+    { "Time": 90, "Count": 1, "Interval": 1, "Health": 480, "Speed": 36, "Gold": 28, "Impact": 12, "Boss": true }
+  ]
+}
+
